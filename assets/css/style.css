@@ -1,0 +1,124 @@
+/*body style*/
+body {
+    background: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*navigation style | h1 & ul/li*/
+nav {
+    background: #f7f7f7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    font-family: Segoe UI;
+    color: black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 60%;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    margin: 0;
+    font-size: .70em;
+    font-weight: 600;
+}
+
+li a {
+    text-decoration: none;  
+    width: auto;
+    padding: 0 20px 0px 0px;
+}
+
+/* home parent container div */
+.container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;   
+    margin: 0;
+    padding: 10px 0;
+    background: white;
+}
+
+/*sibling divs for each deck*/
+div {
+    width: 90%;
+    height: auto;
+    padding: 10px 0; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+/*deck name*/
+h3 {
+    font-family: Trebuchet MS;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/*card back image*/
+.card-back {
+    width: 50vw;
+    height: 40vh;
+    border: 0.3px #f7f7f7 solid;
+    border-radius: 15px;
+    box-shadow: 3px 4px 5px 3px black;
+}
+
+/* footer div | ul/li & image (.logo-img) */
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    bottom: 0;
+    font-family: Segoe UI;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    font-size: .80em;
+    font-weight: 600;
+}
+
+.footer-li {
+    width: auto;
+    padding: 2px;
+}
+
+.logo-img {
+    width: 15%;
+    height: auto;
+    padding: 10px;
+}
