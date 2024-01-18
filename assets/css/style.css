@@ -12,14 +12,15 @@ h1 {
     margin: 0;
     padding: 10px;
     font-size: 2.4em;
-    font-family: Segoe UI;
+    font-family: Trebuchet MS;
     font-weight: 600;
+    color: black;
 }
 
 /*navigation style & ul/li*/
 nav {
     background: #d2cddd;
-    width: 94%;
+    width: 89%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -27,14 +28,14 @@ nav {
     position: sticky;
     top: 0;
     margin: 0;
-    font-family: Segoe UI;
+    font-family: Arial Narrow;
 }
 
 ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    background: black;
+    background: #48485d;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -44,15 +45,15 @@ ul {
 li {
     text-align: center;
     text-decoration: none;  
-    padding: 1px 3px 1px 3px;
-    font-size: .8em;
+    padding: 8px 10px;
+    font-size: .9em;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* home parent container div */
 .container {
-    width: 94%;
+    width: 89%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +67,7 @@ li {
 div {
     width: 56%;
     height: auto;
-    padding: 10px 0; 
+    padding: 15px 0; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -77,27 +78,28 @@ div {
 /*deck name*/
 h3 {
     font-family: Trebuchet MS;
-    font-size: 1em;
+    font-size: 1.6em;
     font-weight: 600;
     color: black;
     text-align: center;
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 /*card back image*/
 .card-back {
-    width: 60%;
-    height: 70%;
-    border: 0.3px #f7f7f7 solid;
+    width: 70%;
+    height: 85%;
+    border: solid 1.5px black;
     border-radius: 15px;
-    box-shadow: 3px 4px 5px 3px black;
+    box-shadow:10px 10px 20px #48485d;
+    margin: 10px 0;
 }
 
 /* footer div | ul/li & image (.logo-img) */
 footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 89%;
     height: auto;
     background: #d2cddd;
     bottom: 0;
