@@ -1,55 +1,58 @@
 /*body style*/
 body {
-    background: #ffffff;
+    background: #d2cddd;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*navigation style | h1 & ul/li*/
+/*header style*/
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2.4em;
+    font-family: Segoe UI;
+    font-weight: 600;
+}
+
+/*navigation style & ul/li*/
 nav {
-    background: #f7f7f7;
-    width: 100%;
+    background: #d2cddd;
+    width: 94%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     margin: 0;
     font-family: Segoe UI;
-    color: black;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-h1 {
-    margin: 0;
-    padding: 10px;
-    font-size: 2em;
-    font-weight: 600;
 }
 
 ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
-    width: 60%;
-    padding: 10px 20px 10px 10px;
-    align-items: center;
+    background: black;
+    width: 100%;
+    padding: 0;
     margin: 0;
-    font-size: .70em;
-    font-weight: 600;
+    justify-content: space-around;
 }
 
-li a {
+li {
+    text-align: center;
     text-decoration: none;  
-    width: auto;
-    padding: 0 20px 0px 0px;
+    padding: 1px 3px 1px 3px;
+    font-size: .8em;
+    color: white;
+    font-weight: 600;
 }
 
 /* home parent container div */
 .container {
-    width: 70%;
+    width: 94%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +64,7 @@ li a {
 
 /*sibling divs for each deck*/
 div {
-    width: 90%;
+    width: 56%;
     height: auto;
     padding: 10px 0; 
     display: flex;
@@ -83,8 +86,8 @@ h3 {
 
 /*card back image*/
 .card-back {
-    width: 50vw;
-    height: 40vh;
+    width: 60%;
+    height: 70%;
     border: 0.3px #f7f7f7 solid;
     border-radius: 15px;
     box-shadow: 3px 4px 5px 3px black;
@@ -96,10 +99,9 @@ footer {
     flex-direction: row;
     width: 100%;
     height: auto;
-    background: whitesmoke;
+    background: #d2cddd;
     bottom: 0;
-    font-family: Segoe UI;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -107,18 +109,46 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background: #d2cddd;
     width: 70%;
-    font-size: .80em;
+    font-family: Segoe UI;
+    font-size: .9em;
     font-weight: 600;
+    color: black;
 }
 
 .footer-li {
     width: auto;
-    padding: 2px;
+    padding: 0px;
+    color: black;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: black;
 }
 
 .logo-img {
-    width: 15%;
+    width: 13%;
     height: auto;
     padding: 10px;
 }
+
+/* @media screen and (max-width: 600px) {
+   .container {
+    width: 94%;
+   } 
+
+   div {
+    width: 90%;
+   }
+
+   .card-back {
+    width: 50%;
+    height: auto;
+   }
+
+   ul li {
+    font-size: 1.2em;
+   }
+} */
