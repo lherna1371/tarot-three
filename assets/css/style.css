@@ -35,7 +35,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    background: #48485d;
+    background: #919191;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -44,11 +44,14 @@ ul {
 
 li {
     text-align: center;
-    text-decoration: none;  
     padding: 8px 10px;
+}
+
+li a {
+    text-decoration: none;
     font-size: .9em;
     color: white;
-    font-weight: 500;
+    font-weight: 500;  
 }
 
 /* home parent container div */
