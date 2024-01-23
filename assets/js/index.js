@@ -28,21 +28,21 @@ function loadElements(array) {
             // console.log(deckDivCbd);
             //set attribute to assign html class name of child <div> "deck-div-cbd"
             deckDivCbd.setAttribute("class", "deck-div-cbd");
-            console.log(deckDivCbd);
+            // console.log(deckDivCbd);
 
             //loop [elements] to create <div> confirmed w/ console.log "deckDivRw" = children <div>
             let deckDivRw = document.createElement("div");
             // console.log(deckDivRw);
             //set attribute to assign html class name of child <div> "deck-div-rw"
             deckDivCbd.setAttribute("class", "deck-div-rw");
-            console.log(deckDivRw);
+            // console.log(deckDivRw);
 
             //loop [elements] to create <div> confirmed w/ console.log "deckDivWs" = children <div>
             let deckDivWs = document.createElement("div");
             // console.log(deckDivWs);
             //set attribute to assign html class name of child <div> "deck-div-ws"
             deckDivCbd.setAttribute("class", "deck-div-Ws");
-            console.log(deckDivWs);
+            // console.log(deckDivWs);
 
             //loop to add text content for H3 - 
             let cardHeader = document.createElement("h3");
@@ -69,25 +69,28 @@ function loadElements(array) {
             deckDivCbd.append(cardHeader);
             deckDivCbd.append(img2);
             deckDivCbd.append(clickView);
-            console.log(deckDivCbd);
+            // console.log(deckDivCbd);
             
             deckDivRw.append(cardHeader);
             deckDivRw.append(img2);
             deckDivRw.append(clickView);
-            console.log(deckDivRw);
+            // console.log(deckDivRw);
 
             deckDivWs.append(cardHeader);
             deckDivWs.append(img2);
             deckDivWs.append(clickView);
-            console.log(deckDivWs);
+            // console.log(deckDivWs);
 
             //append deckDiv "children" <div> to Container "parent" <div>
             container.append(deckDivCbd);
             container.append(deckDivRw);
             container.append(deckDivWs);
-            console.log(container);
+            // console.log(container);
         }
     }
+    let allDecks = document.querySelectorAll(".container");
+    console.log(allDecks);
+    console.log(allDecks[0]);
 }
 
 
