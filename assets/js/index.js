@@ -1,97 +1,52 @@
-// VAR assigned to the parent div class ".container" & Confirmed with console.log.
-let container = document.querySelector(".container");
-// console.log(container);
+// VAR assigned to the parent div class ".deck-container" & Confirmed with console.log.
+let deckContainer = document.querySelector(".deck-container");
+console.log(deckContainer);
 
-//invoke function what array to access
-loadElements(cardObjects);
-function loadElements(array) {
-    //VAR named elements to reference array
-    let elements = array;
-    // console.log(elements);
+//invoke function to access deck.js []
+loadDeckElements(decks);
 
-    //loop through elements array which is actually cardObjects.js array.
-    for (let i = 0; i < elements.length; i++){
-        //if index references the deck_id (located in cardObjects []) console.log to confirm access to all objects contained within the cardObjects [].
-        if (elements[i].deck_id === 1) {
-            // console.log(elements[i]);
-            // console.log(elements[i].image);
-            // console.log(elements[i].image_2);
+function loadDeckElements(deckDataArray) {
 
-            //loop [elements] to create <div> confirmed w/ console.log "container" = parent <div>/
-            let container = document.createElement("div");
-            // console.log(container);
-            //set attribute to assign html class name of parent <div> "container"
-            container.setAttribute("class", "container");
-
-            //loop [elements] to create <div> confirmed w/ console.log "deckDivCbd" = children <div>
-            let deckDivCbd = document.createElement("div");
-            // console.log(deckDivCbd);
-            //set attribute to assign html class name of child <div> "deck-div-cbd"
-            deckDivCbd.setAttribute("class", "deck-div-cbd");
-            // console.log(deckDivCbd);
-
-            //loop [elements] to create <div> confirmed w/ console.log "deckDivRw" = children <div>
-            let deckDivRw = document.createElement("div");
-            // console.log(deckDivRw);
-            //set attribute to assign html class name of child <div> "deck-div-rw"
-            deckDivCbd.setAttribute("class", "deck-div-rw");
-            // console.log(deckDivRw);
-
-            //loop [elements] to create <div> confirmed w/ console.log "deckDivWs" = children <div>
-            let deckDivWs = document.createElement("div");
-            // console.log(deckDivWs);
-            //set attribute to assign html class name of child <div> "deck-div-ws"
-            deckDivCbd.setAttribute("class", "deck-div-Ws");
-            // console.log(deckDivWs);
-
-            //loop to add text content for H3 - 
-            let cardHeader = document.createElement("h3");
-            cardHeader.setAttribute("class", "deck-name");
-            // console.log(cardHeader);
-
-            //loop [elements] to create "img" (image_2 added to cardObjects = back of card)
-            //set attribute to assign class name in html "card-back"
-            //set attribute to index src located in elements (cardObjects[]) as image_2
-            let img2 = document.createElement("img");
-            img2.setAttribute("class", "card-back");
-            img2.setAttribute("src", elements[i].image_2);
-            // console.log(img2);
+    //loop through deckDataArray array = deck.js
+    for (let i = 0; i < deckDataArray.length; i++) {
+            console.log(deckDataArray[i]);
             
-            //loop to create an anchor for each deck located on homepage to pass to individual deck page.
-            let clickView = document.createElement("a");
-            clickView.setAttribute("class", "click-view");
-            clickView.setAttribute("href", `./deck.html?deck=${elements[i].id}`);
-            clickView.textContent = "Click to view";
-            // console.log(clickView);
+        //loop [deckDataArray] to create <div> confirmed w/ console.log "container" = parent <div>/
+        let deckDiv = document.createElement("div");
+        console.log(deckDiv);
+        deckDiv.setAttribute("class", "deck-div");
 
-            //append elements to each child <div>. (cbd,rw,ws - decks)
-            //confirmed in console.log
-            deckDivCbd.append(cardHeader);
-            deckDivCbd.append(img2);
-            deckDivCbd.append(clickView);
-            // console.log(deckDivCbd);
+        //loop to add text content for h3
+        let deckHeader = document.createElement("h3");
+        deckHeader.setAttribute("class", "deck-name");
+        deckHeader.textContent = deckDataArray[i].name;
+        console.log(deckHeader);
+
+        //loop to image from [deckDataArray]
+        let img = document.createElement("img");
+        img.setAttribute("class", "card-back");
+        img.setAttribute("src", deckDataArray[i].card_back);
+        img.setAttribute("alt", " ");
+        console.log(img);
             
-            deckDivRw.append(cardHeader);
-            deckDivRw.append(img2);
-            deckDivRw.append(clickView);
-            // console.log(deckDivRw);
+        //loop to create an anchor - each deck index.html to pass to deck.html.
+        let deckLink = document.createElement("a");
+        deckLink.setAttribute("href", `./deck.html?deck=${deckDataArray[i].id}`);
+        deckLink.textContent = "View Here";
+        console.log(deckLink);
 
-            deckDivWs.append(cardHeader);
-            deckDivWs.append(img2);
-            deckDivWs.append(clickView);
-            // console.log(deckDivWs);
+        //append elements to deckDiv
+        deckDiv.append(deckHeader);
+        deckDiv.append(img);
+        deckDiv.append(deckLink);
+        console.log(deckDiv);
 
-            //append deckDiv "children" <div> to Container "parent" <div>
-            container.append(deckDivCbd);
-            container.append(deckDivRw);
-            container.append(deckDivWs);
-            // console.log(container);
+        //append deckDiv to deckContainer "parent" <div>
+        deckContainer.append(deckDiv);
+        console.log(deckContainer);
         }
     }
-    let allDecks = document.querySelectorAll(".container");
-    console.log(allDecks);
-    console.log(allDecks[0]);
-}
+
 
 
 

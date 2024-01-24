@@ -27,20 +27,18 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 2.2em;
     font-family: Trebuchet MS;
-    font-weight: 600;
+    font-weight: 900;
     color: #512DA8;
 }
 
 /*navigation style & ul/li*/
 nav {
-    background: #d2cddd;
+    /* background: #d2cddd; */
     width: 89%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
     position: sticky;
     top: 0;
     font-family: Arial Narrow;
@@ -48,18 +46,20 @@ nav {
 
 ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
-    background: #919191;
+    background: #412e6f;
     width: 100%;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 li {
     text-align: center;
-    padding: 3px;
+    padding: 5px 20px 5px 5px;
 }
 
 li a {
@@ -69,7 +69,7 @@ li a {
     font-weight: 500;  
 }
 
-/* home parent container div */
+/*parent container for child ".card-container"*/
 .container {
     width: 89%;
     height: auto;
@@ -82,8 +82,21 @@ li a {
     background: white;
 }
 
+/*deck parent-container div */
+.deck-container {
+    width: 89%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;   
+    margin: 0;
+    padding: 10px 0;
+    background: white;
+}
+
 /*sibling divs for each deck*/
-.deck-div-cdb .deck-div-rw .deck-div-ws {
+.deck-div {
     width: 56%;
     height: auto;
     padding: 15px 0; 
@@ -95,13 +108,13 @@ li a {
 }
 
 /*deck name*/
-h3 {
+.deck-name {
     font-family: Trebuchet MS;
-    font-size: 1.6em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 900;
     color: black;
     text-align: center;
-    margin: 15px 0px;
+    margin: 0px;
 }
 
 /*card back image*/
@@ -114,6 +127,15 @@ h3 {
     margin: 10px 0;
 }
 
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #512DA8;
+    font-family: Arial Narrow;
+    padding: 10px 0;
+}
+
 /* footer div styling*/
 footer {
     display: flex;
@@ -122,15 +144,15 @@ footer {
     align-items: center;
     width: 89%;
     height: 10%;
-    background: #919191;
 }
 
 .footer-ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #919191;
-    width: 89%;
+    background: #412e6f;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .footer-li {

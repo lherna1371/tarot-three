@@ -1,9 +1,8 @@
 const decks = [
-    {id: 1, name: "Rider Waite Tarot"},
-    {id: 2, name: "Wandering Spirit Tarot"},
-    {id: 3, name: "CBD Tarot De Marseille"}
+    {id: 1, name: "CBD Tarot De Marseille", card_back: "./assets/images/cbd-deck/majors/cbd-card-back.jpg"},
+    {id: 2, name: "Rider Waite Tarot", card_back: "./assets/images/rw-deck/majors/rw-card-back.png"},
+    {id: 3, name: "Wandering Spirit Tarot", card_back: "./assets/images/ws-deck/majors/ws-card-back.jpg"}
 ]
-
 
 const cards = [
     {id: 1, name: "The Fool", suit: "Major Arcana"},
