@@ -26,7 +26,7 @@ function loadDeckElements(deckDataArray) {
         let img = document.createElement("img");
         img.setAttribute("class", "card-back");
         img.setAttribute("src", deckDataArray[i].card_back);
-        img.setAttribute("alt", " ");
+        img.setAttribute("alt", "card back");
         console.log(img);
             
         //loop to create an anchor - each deck index.html to pass to deck.html.

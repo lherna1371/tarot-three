@@ -3,37 +3,44 @@ console.log(queryString);
 //code to conduct search
 
 const urlParams = new URLSearchParams(queryString);
-console.log(urlparams);
+console.log(urlParams);
 //code "where to search"
 
 const cardId = parseInt(urlParams.get("card"));
 console.log(typeof cardId);
-//query all cardIds and provide
+//console.log displays "number" as loop not created.
 
 console.log(cardObjects);
 //console.log confirms all objects are accessed in cardObjects []
 
-let cardObjData
-//VAR named cardObjData to access card-objects.js []
-for (let = i; 0 < cardObjects.length; i++) {
-    console.log(cardObjects[i]);
-    if(cardObjects[i].id === cardId) {
-        cardObjData = cardObjects[i];
+let deckCardsData;
+//VAR named deckCardsData for loop of card-objects.js []
+for (let i = 0; i < cardObjects.length; i++) {
+    console.log(cardObjects[i]); 
+    if (cardObjects[i].id === cardId) {
+        deckCardsData = cardObjects[i];
     }
 }
-console.log(cardObjData);
-//console.log to confirm ojects assigned to card
+console.log(deckCardsData);
+//console.log returns as undefined?
 
-let selectedDeck;
-//loop decks-cards.js [] assign "deck-name" to deck_id
-for(let i = o; i < decks.length; i++) {
+let deckData;
+//VAR named deckData for loop of decks-cards.js []
+for (let i = 0; i < decks.length; i++) {
     console.log(decks[i]);
-    //console.log to confirm all decks assigned
-    if(decks[i]id === cardObjData.deck_id ) {
-    //then loop through card-objects.js [] to assign all objects to each deck    
-        selectedDeck == decks[i];
-        // console.log to confirm assignement complete
+    if(decks[i].id === cardObjects.deck_id) {
+        deckData = decks[i];
     }
 }
-console.log(selectedDeck);
-//confirm all decks assigned
+console.log(deckData);
+//console.log returns as undefined?
+
+let cardData;
+for (let i = 0; 0 < cards.length; i++) {
+    console.log(cards[i]);
+    if(cards[i].id === cardObjects.card_id) {
+        cardData = cards[i];
+    }
+}
+console.log(cardData);
+//console.log returns as undefined?

@@ -129,11 +129,11 @@ li a {
 
 a {
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: .8em;
+    font-weight: 900;
     color: #512DA8;
     font-family: Arial Narrow;
-    padding: 10px 0;
+    padding: 8px 0px 10px 0px;
 }
 
 /* footer div styling*/
@@ -165,8 +165,7 @@ footer {
 }
 
 .footer-li a {
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 /* @media screen and (max-width: 600px) {
