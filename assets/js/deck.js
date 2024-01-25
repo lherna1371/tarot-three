@@ -16,7 +16,7 @@ console.log(cardObjects);
 let deckCardsData;
 //VAR named deckCardsData for loop of card-objects.js []
 for (let i = 0; i < cardObjects.length; i++) {
-    console.log(cardObjects[i]); 
+    // console.log(cardObjects[i]); 
     if (cardObjects[i].id === cardId) {
         deckCardsData = cardObjects[i];
     }
@@ -27,17 +27,17 @@ console.log(deckCardsData);
 let deckData;
 //VAR named deckData for loop of decks-cards.js []
 for (let i = 0; i < decks.length; i++) {
-    console.log(decks[i]);
+    // console.log(decks[i]);
     if(decks[i].id === cardObjects.deck_id) {
         deckData = decks[i];
     }
 }
-console.log(deckData);
+// console.log(deckData);
 //console.log returns as undefined?
 
 let cardData;
 for (let i = 0; 0 < cards.length; i++) {
-    console.log(cards[i]);
+    // console.log(cards[i]);
     if(cards[i].id === cardObjects.card_id) {
         cardData = cards[i];
     }
